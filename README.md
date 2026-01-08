@@ -87,7 +87,7 @@ The morphing element that animates between button and menu states.
 
 | Prop | Type | Default | Description |
 |------|------|---------|-------------|
-| `buttonSize` | `number` | `44` | Closed button diameter |
+| `buttonSize` | `number \| { width, height }` | `40` | Closed button size (number for square, object for rectangular) |
 | `menuWidth` | `number` | `200` | Open menu width |
 | `menuRadius` | `number` | `24` | Open menu border-radius |
 
