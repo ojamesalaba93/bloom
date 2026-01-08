@@ -1,0 +1,19 @@
+{
+  "name": "bloom-monorepo",
+  "private": true,
+  "scripts": {
+    "dev": "turbo dev",
+    "build": "turbo build",
+    "lint": "turbo lint",
+    "dev:docs": "pnpm --filter docs dev",
+    "build:bloom": "pnpm --filter bloom build"
+  },
+  "devDependencies": {
+    "turbo": "^2.0.0",
+    "typescript": "^5.3.0"
+  },
+  "packageManager": "pnpm@9.0.0",
+  "engines": {
+    "node": ">=18"
+  }
+}
