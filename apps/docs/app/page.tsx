@@ -2,7 +2,7 @@
 
 import { useState } from 'react'
 import { motion } from 'framer-motion'
-import { Menu, type Direction, type Anchor } from 'bloom-ui'
+import { Menu, type Direction, type Anchor } from 'bloom-menu'
 import { MoreHorizontal, Pencil, Copy, Archive, Share, Github, ChevronRight, Twitter, Link2, Mail, ArrowUp, ArrowDown, ArrowLeft, ArrowRight, AlignStartVertical, AlignCenterVertical, AlignEndVertical, Minus, Check } from 'lucide-react'
 
 export default function Home() {
@@ -93,14 +93,14 @@ export default function Home() {
           </a>
         </div>
         <CodeBlock className="mt-4" language="bash">
-          npm install bloom-ui framer-motion
+          npm install bloom-menu framer-motion
         </CodeBlock>
       </section>
 
       {/* Anatomy */}
       <section className="mt-16">
         <h2 className="text-xl font-medium">Anatomy</h2>
-        <CodeBlock className="mt-4" language="tsx">{hasSubmenu ? `import { Menu } from 'bloom-ui'
+        <CodeBlock className="mt-4" language="tsx">{hasSubmenu ? `import { Menu } from 'bloom-menu'
 
 const itemClass = "flex items-center gap-2 rounded-lg px-2 py-2 text-sm text-neutral-900 hover:bg-neutral-100"
 
@@ -150,7 +150,7 @@ export default () => (
       </Menu.Content>
     </Menu.Container>
   </Menu.Root>
-)` : `import { Menu } from 'bloom-ui'
+)` : `import { Menu } from 'bloom-menu'
 
 const itemClass = "flex items-center gap-2 rounded-lg px-2 py-2 text-sm text-neutral-900 hover:bg-neutral-100"
 

@@ -13,32 +13,32 @@ A React component library that creates fluid morphing animations between a trigg
 ## Installation
 
 ```bash
-npm install bloom-ui framer-motion
+npm install bloom-menu framer-motion
 ```
 
 ## Quick Start
 
 ```tsx
-import { Bloom } from 'bloom-ui'
+import { Menu } from 'bloom-menu'
 import { MoreHorizontal, Pencil, Trash } from 'lucide-react'
 
-function Menu() {
+function Example() {
   return (
-    <Bloom.Root>
-      <Bloom.Container buttonSize={48} menuWidth={200} menuRadius={12}>
-        <Bloom.Trigger>
+    <Menu.Root>
+      <Menu.Container buttonSize={48} menuWidth={200} menuRadius={12}>
+        <Menu.Trigger>
           <MoreHorizontal />
-        </Bloom.Trigger>
-        <Bloom.Content>
-          <Bloom.Item onSelect={() => console.log('edit')}>
+        </Menu.Trigger>
+        <Menu.Content>
+          <Menu.Item onSelect={() => console.log('edit')}>
             <Pencil /> Edit
-          </Bloom.Item>
-          <Bloom.Item onSelect={() => console.log('delete')}>
+          </Menu.Item>
+          <Menu.Item onSelect={() => console.log('delete')}>
             <Trash /> Delete
-          </Bloom.Item>
-        </Bloom.Content>
-      </Bloom.Container>
-    </Bloom.Root>
+          </Menu.Item>
+        </Menu.Content>
+      </Menu.Container>
+    </Menu.Root>
   )
 }
 ```
@@ -48,25 +48,25 @@ function Menu() {
 Control where the menu expands from and how it aligns to the trigger:
 
 ```tsx
-<Bloom.Root direction="top" anchor="start">    {/* Expands up, aligned to start */}
-<Bloom.Root direction="bottom" anchor="center"> {/* Expands down, centered */}
-<Bloom.Root direction="left" anchor="end">      {/* Expands left, aligned to end */}
+<Menu.Root direction="top" anchor="start">    {/* Expands up, aligned to start */}
+<Menu.Root direction="bottom" anchor="center"> {/* Expands down, centered */}
+<Menu.Root direction="left" anchor="end">      {/* Expands left, aligned to end */}
 ```
 
 ## Animation Presets
 
 ```tsx
-<Bloom.Root animation="snappy">    {/* Quick ease-out curve */}
-<Bloom.Root animation="gentle">    {/* Default, smooth spring */}
-<Bloom.Root animation="relaxed">   {/* Slower, laid-back spring */}
+<Menu.Root animation="snappy">    {/* Quick ease-out curve */}
+<Menu.Root animation="gentle">    {/* Default, smooth spring */}
+<Menu.Root animation="relaxed">   {/* Slower, laid-back spring */}
 
 {/* Or use custom spring config */}
-<Bloom.Root animation={{ stiffness: 400, damping: 25 }}>
+<Menu.Root animation={{ stiffness: 400, damping: 25 }}>
 ```
 
 ## Components
 
-### `<Bloom.Root>`
+### `<Menu.Root>`
 
 The root component that provides context for all other components.
 
@@ -81,7 +81,7 @@ The root component that provides context for all other components.
 | `closeOnClickOutside` | `boolean` | `true` | Close when clicking outside |
 | `closeOnEscape` | `boolean` | `true` | Close when pressing Escape |
 
-### `<Bloom.Container>`
+### `<Menu.Container>`
 
 The morphing element that animates between button and menu states.
 
@@ -91,7 +91,7 @@ The morphing element that animates between button and menu states.
 | `menuWidth` | `number` | `200` | Open menu width |
 | `menuRadius` | `number` | `24` | Open menu border-radius |
 
-### `<Bloom.Trigger>`
+### `<Menu.Trigger>`
 
 Content shown when closed. Fades out when the menu opens.
 
@@ -100,7 +100,7 @@ Content shown when closed. Fades out when the menu opens.
 | `className` | `string` | — | Additional class names |
 | `style` | `CSSProperties` | — | Additional styles |
 
-### `<Bloom.Content>`
+### `<Menu.Content>`
 
 Menu content shown when open. Fades in with a slight delay.
 
@@ -109,7 +109,7 @@ Menu content shown when open. Fades in with a slight delay.
 | `className` | `string` | — | Additional class names |
 | `style` | `CSSProperties` | — | Additional styles |
 
-### `<Bloom.Item>`
+### `<Menu.Item>`
 
 Individual menu items with hover highlighting.
 
@@ -119,7 +119,7 @@ Individual menu items with hover highlighting.
 | `disabled` | `boolean` | `false` | Disable the item |
 | `closeOnSelect` | `boolean` | `true` | Close menu after selection |
 
-### `<Bloom.Portal>`
+### `<Menu.Portal>`
 
 Renders content in a portal.
 
@@ -127,7 +127,7 @@ Renders content in a portal.
 |------|------|---------|-------------|
 | `container` | `HTMLElement` | `document.body` | Portal target |
 
-### `<Bloom.Overlay>`
+### `<Menu.Overlay>`
 
 Optional backdrop overlay.
 
